@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "KoHo", sans-serif;
+}
+.background {
+  height: 100vh;
+  width: 100%;
+  padding: 50px 0px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(98, 0, 184, 1) 100%
+  );
+  display: grid;
+  place-items: center;
+}
+h1 {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+#info {
+  margin-top: 80px;
+}
+#input {
+  font-size: 1.2rem;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-weight: 600;
+}
+#input::placeholder {
+  color: #fff;
+}
+#input:focus {
+  outline: none;
+}
+#btn {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px 15px;
+  margin: 15px auto;
+  width: 70%;
+  border: none;
+  background-color: #e38154;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+#btn:focus {
+  outline: none;
+}
+
+.weather {
+  height: 550px;
+  width: 320px;
+  background-image: url("./weather.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 10px;
+}
+#error {
+  font-size: 1.2rem;
+  color: #fff;
+}
+#data {
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  color: #fff;
+}
+hr {
+  margin: 15px 0px;
+  display: none;
+}
+h2 {
+  margin-bottom: 10px;
+}
+
+.iconsDiv,
+#city,
+#date {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .background {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 840px !important;
+  }
+}
+@media (max-width: 768px) {
+  .background {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 500px !important;
+  }
+}
+@media (max-width: 640px) {
+  .background {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 200px !important;
+  }
+}
+@media (max-width: 540px) {
+  .background {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 200px !important;
+  }
+}
+@media (max-width: 510px) {
+  .background {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 50px !important;
+  }
+}
+@media (max-width: 414px) {
+  .background {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 200px !important;
+  }
+}
+@media (max-width: 400px) {
+  .background {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 130px !important;
+  }
+}
