@@ -16,7 +16,7 @@ async function getData(data) {
     `https://api.openweathermap.org/data/2.5/weather?q=${data}&units=metric&appid=${apiKey}`
   );
   let WeatherData = await response.json();
-  console.log(WeatherData);
+
   displayData(WeatherData);
 }
 
